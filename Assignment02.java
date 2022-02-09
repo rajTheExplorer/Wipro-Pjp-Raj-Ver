@@ -1,26 +1,17 @@
 import java.util.Scanner;
-class Assignment02
+
+class App
 {
-    public static void main(String[] args)
-    {
-        int[] arr={1,2,78,4,5,6};
-        int min=arr[0];
-        int max=arr[0];
-        for(int i=0;i<arr.length;i++)
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        if(num%2==0)
         {
-            if(arr[i]<min)
-            {
-                min=arr[i];
-            }
+            System.out.println("The number is Even");
         }
-        for(int j=0;j< arr.length;j++)
+        else
         {
-            if(arr[j]>max)
-            {
-                max=arr[j];
-            }
+            System.out.println("The number is Odd");
         }
-        System.out.println("The minimum of the elements in the array is "+min);
-        System.out.println("The maximum of elements in the array is "+max);
     }
 }

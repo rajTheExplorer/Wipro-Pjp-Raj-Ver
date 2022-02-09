@@ -1,23 +1,23 @@
-import java.util.*;
+import java.util.Scanner;
 class Assignment09
 {
-	public static void main(String[] args) {
-		int[] arr={Integer.parseInt(args[0]),Integer.parseInt(args[1]),Integer.parseInt(args[2]),Integer.parseInt(args[3])};
-		ArrayList<Integer> al1=new ArrayList<Integer>();
-		for(int i=arr.length-1;i>=0;i--)
-		{
-			al1.add(arr[i]);
-		}
-		int[][] arr2d=new int[2][2];
-		int count=0;
-		for(int j=0;j<arr2d.length;j++)
-		{
-			for(int k=0;k<arr2d.length;k++)
-			{
-				arr2d[j][k]=al1.get(count);
-				count++;
-			}
-		}
-		System.out.println(Arrays.deepToString(arr2d));
-	}
+    public static void main(String[] args)
+    {
+        int month=Integer.parseInt(args[0]);
+        switch (month) {
+            case 1 -> System.out.println("January");
+            case 2 -> System.out.println("Febrauary");
+            case 3 -> System.out.println("March");
+            case 4 -> System.out.println("April");
+            case 5 -> System.out.println("May");
+            case 6 -> System.out.println("June");
+            case 7 -> System.out.println("July");
+            case 8 -> System.out.println("August");
+            case 9 -> System.out.println("September");
+            case 10 -> System.out.println("October");
+            case 11 -> System.out.println("November");
+            case 12 -> System.out.println("December");
+            default -> System.out.println("Invalid Month");
+        }
+    }
 }

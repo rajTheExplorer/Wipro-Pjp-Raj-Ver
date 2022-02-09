@@ -1,18 +1,23 @@
-import java.util.*;
+import java.util.Scanner;
 class Assignment05
 {
     public static void main(String[] args)
     {
-        int[] arr={78,25,47,29,74};
-        int temp;
-        Arrays.sort(arr);
-        int smallest=arr[0];
-        int secondSmallest=arr[1];
-        int largest=arr[arr.length-1];
-        int secondLargest=arr[arr.length-2];
-        System.out.println(smallest);
-        System.out.println(secondSmallest);
-        System.out.println(largest);
-        System.out.println(secondLargest);
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any character");
+        char c=sc.next().charAt(0);
+        int conCharInt=c;
+        if((conCharInt>=97 && conCharInt<=122)||(conCharInt>=65 && conCharInt<=91))
+        {
+            System.out.println("Alphabet");
+        }
+        else if(conCharInt>=48 && conCharInt<=57)
+        {
+            System.out.println("Digit");
+        }
+        else
+        {
+            System.out.println("Special Character");
+        }
     }
 }

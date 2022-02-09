@@ -1,20 +1,17 @@
-import java.util.*;
+import java.util.Scanner;
 class Assignment07
 {
-	public static void main(String[] args) {
-		ArrayList<Integer> al1=new ArrayList<>();
-		int[] arr={12,34,12,45,67,89};
-		for(int i=0;i<arr.length;i++)
-		{
-			if(al1.contains(arr[i]))
-			{
-				continue;
-			}
-			else 
-			{
-				al1.add(arr[i]);
-			}
-		}
-		System.out.println(al1);
-	}
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        char c=sc.next().charAt(0);
+        if(c>=97 && c<=122)
+        {
+            System.out.println((char)(c-32));
+        }
+        else
+        {
+            System.out.println((char)(c+32));
+        }
+    }
 }

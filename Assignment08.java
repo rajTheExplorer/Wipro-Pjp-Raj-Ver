@@ -1,35 +1,18 @@
-class Assignment08
+import java.util.Scanner;
+class Assignmant08
 {
-	public static void main(String[] args) {
-		int[] arr={1,6,4,7,9};
-		int sum=0;
-		int firstIndex=Integer.MIN_VALUE;
-		int secondIndex=Integer.MIN_VALUE;
-		for(int i=0;i<arr.length;i++)
-		{
-			if(arr[i]==6)
-			{
-				firstIndex=i;
-			}
-		}
-		for(int j=0;j<arr.length;j++)
-		{
-			if(arr[j]==7)
-			{
-				secondIndex=j;
-			}
-		}
-		for(int q=0;q<arr.length;q++)
-		{
-			if(q>=firstIndex && q<=secondIndex)
-			{
-				continue;
-			}
-			else 
-			{
-				sum=sum+arr[q];
-			}
-		}
-		System.out.println(sum);
-	}
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        char color=sc.next().charAt(0);
+        switch (color) {
+            case 'R' -> System.out.println("Red");
+            case 'B' -> System.out.println("Blue");
+            case 'G' -> System.out.println("Green");
+            case 'O' -> System.out.println("Orange");
+            case 'Y' -> System.out.println("Yellow");
+            case 'W' -> System.out.println("White");
+            default -> System.out.println("Invalid Code");
+        }
+    }
 }
